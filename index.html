@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>РР4 — Точки клёва | Фарм справочник</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎣 РР4 — Справочник точек клёва</h1>
+    <p>Фарм, трофеи, наживки, водоёмы</p>
+  </header>
+
+  <main>
+    <section class="filters">
+      <input type="text" id="search" placeholder="Поиск по рыбе или водоёму...">
+      <select id="waterFilter">
+        <option value="">Все водоёмы</option>
+      </select>
+      <select id="timeFilter">
+        <option value="">Любое время</option>
+        <option value="Утро">Утро</option>
+        <option value="День">День</option>
+        <option value="Вечер">Вечер</option>
+        <option value="Ночь">Ночь</option>
+      </select>
+    </section>
+
+    <section id="results" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>Справочник РР4. Данные обновляются вручную.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
